@@ -65,6 +65,35 @@ export default {
 
 .login {
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light-text {
+  color: $white;
+}
+
+.dark-text {
+  color: $black;
+}
+
+.light-field {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.dark-field {
+  background-color: rgba(198, 208, 235, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 h4 {
