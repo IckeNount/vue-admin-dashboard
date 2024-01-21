@@ -1,5 +1,8 @@
 <template>
-  <div class="home">
+  <div
+    class="home"
+    :class="{ 'light-background': !isDarkMode, 'dark-background': isDarkMode }"
+  >
     <HeaderComponent />
     <img class="bmw" alt="bmw logo" src="../assets/signin.svg" />
     <HelloWorld msg="Welcome to Your BMW Account" />
